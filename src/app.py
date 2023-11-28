@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 from flask import Flask, request
+from flask import Flask, request, url_for
 
 app = Flask(__name__)
 
@@ -11,6 +12,7 @@ def main():
     <html>
     <head>
         <title>Job Search</title>
+        <link rel="stylesheet" href="{}">
     </head>
     <body>
         <h1>Welcome to the Job Search Portal</h1>
@@ -21,7 +23,7 @@ def main():
         </form>
     </body>
     </html>
-    '''
+    '''.format(url_for('static', filename='styles.css'))
 
 @app.route("/submit_job_type", methods=["POST"])
 def submit_job_type():
@@ -31,6 +33,7 @@ def submit_job_type():
     <html>
     <head>
         <title>Job Type Submitted</title>
+        <link rel="stylesheet" href="{}">
     </head>
     <body>
         <h1>Job Type Submitted</h1>
@@ -38,4 +41,8 @@ def submit_job_type():
         <p>Thank you for submitting your job type. We'll assist you in finding relevant jobs.</p>
     </body>
     </html>
-    '''
+    '''.format(url_for('static', filename='styles.css'))
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
