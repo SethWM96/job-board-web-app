@@ -11,6 +11,32 @@ def main():
     <html>
     <head>
         <title>Job Search</title>
+        <style>
+            body {
+                background-color: olive;
+                color: white;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 20px;
+            }
+            form {
+                display: inline-block;
+                margin-top: 20px;
+            }
+            input[type="text"], input[type="submit"] {
+                padding: 10px;
+                margin: 5px;
+                border: 2px solid white;
+                border-radius: 5px;
+                background-color: white;
+                color: olive;
+                font-family: Arial, sans-serif;
+            }
+            input[type="submit"]:hover {
+                background-color: lightgray;
+            }
+        </style>
     </head>
     <body>
         <h1>Welcome to the Job Search Portal</h1>
@@ -31,6 +57,19 @@ def submit_job_type():
     <html>
     <head>
         <title>Job Type Submitted</title>
+        <style>
+            body {
+                background-color: olive;
+                color: white;
+                font-family: Arial, sans-serif;
+                text-align: center;
+                margin: 0;
+                padding: 20px;
+            }
+            h1, p {
+                color: white;
+            }
+        </style>
     </head>
     <body>
         <h1>Job Type Submitted</h1>
