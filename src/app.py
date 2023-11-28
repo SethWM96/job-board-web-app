@@ -11,12 +11,10 @@ def main():
         <title>Job Search</title>
         <style>
             body {
-                background-color: olive;
+                background-color: blue;
                 color: white;
                 font-family: Arial, sans-serif;
                 text-align: center;
-                margin: 0;
-                padding: 20px;
             }
             form {
                 display: inline-block;
@@ -28,7 +26,7 @@ def main():
                 border: 2px solid white;
                 border-radius: 5px;
                 background-color: white;
-                color: olive;
+                color: blue;
                 font-family: Arial, sans-serif;
             }
             input[type="submit"]:hover {
@@ -49,34 +47,30 @@ def main():
 
 @app.route("/submit_job_type", methods=["POST"])
 def submit_job_type():
-    try:
-        user_input = request.form.get("job_type", "")
-        return f'''
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Job Type Submitted</title>
-            <style>
-                body {
-                    background-color: olive;
-                    color: white;
-                    font-family: Arial, sans-serif;
-                    text-align: center;
-                    margin: 0;
-                    padding: 20px;
-                }
-                h1, p {
-                    color: white;
-                }
-            </style>
-        </head>
-        <body>
-            <h1>Job Type Submitted</h1>
-            <p>You entered: {user_input}</p>
-            <p>Thank you for submitting your job type. We'll assist you in finding relevant jobs.</p>
-        </body>
-        </html>
-        '''
-    except Exception as e:
-        return f"An error occurred: {str(e)}", 500
+    user_input = request.form.get("job_type", "")
+    return f'''
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Job Type Submitted</title>
+        <style>
+            body {
+                background-color: blue;
+                color: white;
+                font-family: Arial, sans-serif;
+                text-align: center;
+            }
+            h1, p {
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Job Type Submitted</h1>
+        <p>You entered: {user_input}</p>
+        <p>Thank you for submitting your job type. We'll assist you in finding relevant jobs.</p>
+    </body>
+    </html>
+    '''
+
 
