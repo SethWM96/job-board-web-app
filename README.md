@@ -1,6 +1,6 @@
 # Job Web Board App
 ## Overview
-The Job Web Board App is a versatile application designed to fetch job data from the Adzuna API and store it efficiently in a MongoDB database. MongoDB, a NoSQL database tool, has been chosen to offer flexibility in integrating multiple APIs over time. The application incorporates a robust data analysis component that employs Pandas for data cleaning and salary analysis.
+The Job Web Board App is a versatile application designed to fetch job data from the Adzuna API and store it efficiently in a MongoDB database. MongoDB, a NoSQL database tool, has been chosen to offer flexibility in integrating multiple APIs over time. The application incorporates a robust data analysis component that employs Pandas for data cleaning and salary analysis. Pandas is chosen as it is a powerful tool that allows you to manipulate data as you please and offers many methods to analyze the data. 
 
 ## Features
 ### Data Fetching: Utilizes the Adzuna API to fetch job data for storage.
