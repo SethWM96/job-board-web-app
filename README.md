@@ -1,13 +1,13 @@
 # Job Web Board App
 ## Overview
-The Job Web Board App is a versatile application designed to fetch job data from the Adzuna API and store it efficiently in a MongoDB database. MongoDB, a NoSQL database tool, has been chosen to offer flexibility in integrating multiple APIs over time. The application incorporates a robust data analysis component that employs Pandas for data cleaning and salary analysis. Pandas is chosen as it is a powerful tool that allows you to manipulate data as you please and offers many methods to analyze the data. 
+The Job Web Board App is a versatile application designed to fetch job data from the Adzuna API and store it efficiently in a MongoDB database. MongoDB, a NoSQL database tool, has been chosen to offer flexibility in integrating multiple APIs over time. The application incorporates a robust data analysis component that employs Pandas for data cleaning and salary analysis. Pandas is chosen as it is a powerful tool that allows you to manipulate data as you please and offers many methods to analyze the data. In total the project implements data colleting, analyzing, unit tests, mock tests, continuous integration, product environment, NoSQL database. Lastly Python and flask were chosen as they are useful tools for prototyping ideas and Python libraries for analyzing data, such as Pandas are powerful and allow for complex data analysis. 
 
 ## Features
-### Data Fetching: Utilizes the Adzuna API to fetch job data for storage.
-### Data Analysis: Cleans and analyzes job data, segmenting salaries into quartiles for user insights.
-### MongoDB Integration: Facilitates data storage and management using MongoDB's NoSQL capabilities.
-### Flexibility: Designed to seamlessly integrate multiple APIs to expand the job data pool.
-### User Interface: Provides an intuitive web interface where users can filter jobs by salary range preference.
+- Data Fetching: Utilizes the Adzuna API to fetch job data for storage.
+- Data Analysis: Cleans and analyzes job data, segmenting salaries into quartiles for user insights.
+- MongoDB Integration: Facilitates data storage and management using MongoDB's NoSQL capabilities.
+- Flexibility: Designed to seamlessly integrate multiple APIs to expand the job data pool.
+- User Interface: Provides an intuitive web interface where users can filter jobs by salary range preference.
 Setup Instructions
 ##To set up and run the application locally, follow these steps:
 
