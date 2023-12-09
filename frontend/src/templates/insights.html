@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Insights</title>
+</head>
+<body>
+    <h1>Job Data Insights</h1>
+    <h2>Jobs in Selected Quartile</h2>
+    <ul>
+        {% for job in jobs %}
+            <li>
+                <h3>{{ job.title }}</h3>
+                <p>Max Salary: {{ job.salary_max }}</p>
+                <a href="{{ job.redirect_url }}">Redirect URL</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
+
+
+
+

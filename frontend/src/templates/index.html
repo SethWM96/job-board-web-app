@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Data Insights</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="input_whole_screen">
+        <h1>Select Quartile for Salary Insight</h1>
+        <p>Explore jobs categorized by salary quartiles, tailored to your qualifications 
+            or career aspirations, allowing you to view roles within specific salary ranges 
+            aligned with your professional goals.
+        </p>
+        <form action="/insights" method="GET">
+            <label for="quartiles">Choose a Quartile:</label>
+            <select id="quartiles" name="quartile">
+                <option value="Lower Quartile">Lower Quartile</option>
+                <option value="Middle Quartile">Middle Quartile</option>
+                <option value="Upper Quartile">Upper Quartile</option>
+                <option value="Above Upper Quartile">Above Upper Quartile</option>
+            </select>
+            <input type="submit" value="Get Salary Insights">
+        </form>
+    </div>
+</body>
+</html>
+
+
+
